@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:background="@color/bg"
+    tools:context="com.quotations.hteteaindray.quotations.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/t"
+        android:textSize="25dp"
+        android:textColor="@color/text"
+        android:gravity="center"/>
+    <ViewFlipper
+        android:id="@+id/flip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/eng1"/>
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/eng2"/>
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/eng3"/>
+    </ViewFlipper>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n1"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n2"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n3"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n4"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n5"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/n6"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/text"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/text"
+        android:onClick="nextpage"
+
+    />
+
+
+</LinearLayout>
